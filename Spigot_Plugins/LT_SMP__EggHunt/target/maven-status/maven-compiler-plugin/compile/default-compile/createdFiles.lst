@@ -1,0 +1,11 @@
+com\sirdanieliii\Operation_EggHunt\events\Events$1.class
+com\sirdanieliii\Operation_EggHunt\other\Utilities.class
+com\sirdanieliii\Operation_EggHunt\commands\SubCommand.class
+com\sirdanieliii\Operation_EggHunt\configuration\ConfigManager.class
+com\sirdanieliii\Operation_EggHunt\EggHunt.class
+com\sirdanieliii\Operation_EggHunt\events\Events.class
+com\sirdanieliii\Operation_EggHunt\commands\subcommands\setPlayerTeam.class
+com\sirdanieliii\Operation_EggHunt\tasks\EveryTick.class
+com\sirdanieliii\Operation_EggHunt\commands\CommandManager.class
+com\sirdanieliii\Operation_EggHunt\other\Messages.class
+com\sirdanieliii\Operation_EggHunt\events\EggProtection.class

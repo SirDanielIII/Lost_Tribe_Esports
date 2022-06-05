@@ -1,0 +1,6 @@
+name: EggHunt
+version: ${project.version}
+author: Sir Daniel III
+main: com.sirdanieliii.Operation_EggHunt.EggHunt
+api-version: 1.18
+commands:

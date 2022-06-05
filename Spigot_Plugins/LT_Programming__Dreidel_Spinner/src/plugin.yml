@@ -1,0 +1,9 @@
+name: LTE_Dreidel
+version: 1.00
+author: Sir Daniel III
+main: com.sirdanieliii.LTE_Dreidel
+api-version: 1.16
+commands:
+  dreidel:
+    description: Spins a dreidel and outputs the outcome
+    usage: /dreidel

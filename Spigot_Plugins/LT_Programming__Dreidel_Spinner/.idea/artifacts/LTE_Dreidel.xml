@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LTE_Dreidel">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="LTE_Dreidel.jar">
+      <element id="module-output" name="LTE_Dreidel" />
+    </root>
+  </artifact>
+</component>
