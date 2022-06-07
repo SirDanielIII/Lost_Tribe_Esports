@@ -1,0 +1,1 @@
+execute if score #whose_turn quatro.dummy = #quatro_id dhg_p.dummy run function dhg_pickup:second

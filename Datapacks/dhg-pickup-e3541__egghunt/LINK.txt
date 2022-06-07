@@ -1,0 +1,4 @@
+This datapack was from https://www.planetminecraft.com/data-pack/dhg-pickup/
+
+It was modified by Sir Daniel III to work with the Egg Event
+- Foxes cannot pickup items
