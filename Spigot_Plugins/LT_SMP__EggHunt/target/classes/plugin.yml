@@ -1,6 +1,6 @@
-name: EggHunt
+name: LT_EggHunt
 version: 1.0
 author: Sir Daniel III
-main: com.sirdanieliii.Operation_EggHunt.EggHunt
+main: com.sirdanieliii.EggHunt.LT_EggHunt
 api-version: 1.18
 commands:

@@ -1,6 +1,6 @@
-package com.sirdanieliii.Operation_EggHunt.commands;
+package com.sirdanieliii.EggHunt.commands;
 
-import com.sirdanieliii.Operation_EggHunt.commands.subcommands.*;
+import com.sirdanieliii.EggHunt.commands.subcommands.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -14,7 +14,7 @@ public class CommandManager implements TabExecutor {
     List<SubCommand> set = new ArrayList<>();
 
     public CommandManager() {
-        set.add(new setPlayerTeam());
+        set.add(new setTeam());
         subcommands.put("set", set);
     }
 
@@ -59,13 +59,6 @@ public class CommandManager implements TabExecutor {
             }
         }
         return null;
-    }
-
-    public static String headers(String type) {
-        return switch (type.toUpperCase()) {
-            case ("EGGHUNT") -> "§6[§FEGGHUNT§6] ";
-            default -> null;
-        };
     }
 
     public static String headerColour(String type, boolean bold) {

@@ -1,4 +1,4 @@
-package com.sirdanieliii.Operation_EggHunt.commands;
+package com.sirdanieliii.EggHunt.commands;
 
 import org.bukkit.entity.Player;
 

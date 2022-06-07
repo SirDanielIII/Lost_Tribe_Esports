@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SD_SMP" />
         <module name="LTE_Egg_Hunt" />
+        <module name="LT_SMP__EggHunt" />
         <module name="Spigot_Plugin" />
         <module name="LTE_Operation_EggHunt" />
         <module name="Operation_Beitzah" />

@@ -1,4 +1,4 @@
-package com.sirdanieliii.Operation_EggHunt.configuration;
+package com.sirdanieliii.EggHunt.configuration;
 
 
 import org.bukkit.Bukkit;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
-import static com.sirdanieliii.Operation_EggHunt.EggHunt.getInstance;
+import static com.sirdanieliii.EggHunt.LT_EggHunt.getInstance;
 
 public class ConfigManager {
     protected File file;
@@ -18,16 +18,16 @@ public class ConfigManager {
     // Set Variables
     public Double configVersion = Double.parseDouble(getInstance().getDescription().getVersion());
     public static String name = "LT SMP S3 Egg Hunt";
-    public static String cmdHeader = "EggHunt";
+    public static String cmdHeader = "LT_EggHunt";
     public static boolean grace = true;
     public static boolean timerCount = true;  // Count ticks in the game
-    public static double timerPossession = 300.0d;  // 300 Seconds = 5 minutes
+    public static int timerPossession = 300;  // 300 Seconds = 5 minutes
     public static int pointsKillMember = 1;
     public static int pointsPossession = 8;
     public static int pointsKillCarrier = 15;
     public static String eggPossession = "none";
     public static String eggLocationLast = "~ ~ ~";
-    public static double eggLocationCheck = 60.0d; // 60 Seconds = 1 Minute
+    public static int eggLocationCheck = 60; // 60 Seconds = 1 Minute
     public static int purpleTeamPoints;
     public static List<String> purpleTeamMembers;
     public static int yellowTeamPoints;
@@ -119,6 +119,10 @@ public class ConfigManager {
         }
     }
 
+    public FileConfiguration getConfig() {
+        return config;
+    }
+
     public void reload() {
         config = YamlConfiguration.loadConfiguration(file);
         configVersion = config.getDouble("config-version");
@@ -126,13 +130,13 @@ public class ConfigManager {
         cmdHeader = config.getString("header");
         grace = config.getBoolean("grace");
         timerCount = config.getBoolean("timer_count");
-        timerPossession = config.getDouble("timer_possession");
+        timerPossession = config.getInt("timer_possession");
         pointsKillMember = config.getInt("points_kill_member");
         pointsPossession = config.getInt("points_possession");
         pointsKillCarrier = config.getInt("points_kill_carrier");
         eggPossession = config.getString("egg_possession");
         eggLocationLast = config.getInt("egg_location_last.X") + " " + config.getInt("egg_location_last.Y") + " " + config.getInt("egg_location_last.Z");
-        eggLocationCheck = config.getDouble("egg_location_check");
+        eggLocationCheck = config.getInt("egg_location_check");
         purpleTeamPoints = config.getInt("purple_team.points");
         purpleTeamMembers = config.getStringList("purple_team.members");
         yellowTeamPoints = config.getInt("yellow_team.points");

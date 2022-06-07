@@ -1,6 +1,6 @@
-name: EggHunt
+name: LT_EggHunt
 version: ${project.version}
 author: Sir Daniel III
-main: com.sirdanieliii.Operation_EggHunt.EggHunt
+main: com.sirdanieliii.EggHunt.LT_EggHunt
 api-version: 1.18
 commands:

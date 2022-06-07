@@ -1,8 +1,7 @@
-package com.sirdanieliii.Operation_EggHunt.events;
+package com.sirdanieliii.EggHunt.events;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.block.data.type.TNT;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Item;
@@ -14,19 +13,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.inventory.*;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerPortalEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scoreboard.*;
 
 import java.util.Objects;
-
-import static com.sirdanieliii.Operation_EggHunt.EggHunt.getInstance;
-import static com.sirdanieliii.Operation_EggHunt.tasks.EveryTick.ticks;
 
 public class EggProtection implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
